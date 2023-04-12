@@ -61,7 +61,7 @@ filterwarnings('ignore') is to ignore the warnings thrown by the modules (gives 
 
 ![stats_usingdescrib](https://user-images.githubusercontent.com/69766918/231433843-65659706-0293-484f-9110-0601016a4b97.jpg)
 
-#### [SKIP it ,if you already know]
+#### **************************************[SKIP ,if you already know]
 
 The describe() method returns description of the data in the DataFrame.
 
@@ -79,6 +79,34 @@ If the DataFrame contains numerical data, the description contains these informa
 **Percentile**  meaning: Percentiles are used in statistics to give you a number that describes the value that a given percent of the values are lower than.
 
 **For Example** :If 75 percentile of SepalLengthCm column is 6.4, meaning that 75% of the sepal lenght (in cm) are of length 6.4 or lower to it.
+
+**The mean** is the sum of all the entries divided by the number of entries
+
+**Standard deviation** is a measure of the amount of variation or dispersion of a set of values. **The square root of the variance is the standard deviation**. We first need to calculate the mean of the values, then calculate the variance, and finally the standard deviation.
+
+Steps to Calculate Standard Deviation
+
+   1. The mean of [1, 2, 3, 4, 5] is 3.
+   2. Calculate variance for each entry by subtracting the mean from the value of the entry. So variance will be [-2, -1, 0, 1, 2].
+   3. Then square each of those resulting values and sum the results. For the above example, it will become 4+1+0+1+4=10.
+   4. Then divide the result by the number of data points minus one. This will give the variance. So variance will be 10/(5-1) = 2.5
+   5. So **standard deviation** will be **sqrt(2.5)** = 1.5811388300841898.
+
+#### ***************************************************************[Back to the Python code for dataset]
+
+
+#### STEP 4: Count of unique values
+
+![value_count](https://user-images.githubusercontent.com/69766918/231443083-6e222e83-b1fe-4973-8c68-79e0b7cf2e93.jpg)
+
+    * value_counts() creates a dictionary of counts for each unique value.
+
+    * We have 50 samples in each output class
+    
+## Preprocessing the Dataset
+    
+#### STEP 5: Count of unique values    
+    
 
 
 
