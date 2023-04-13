@@ -124,6 +124,13 @@ Since this is a relatively simple data set there is not much cleaning that needs
 
 This data set is not missing(and having no NUll) values. While this makes modeling much easier, this is not usually the case.
 
+## Label Encoder
+
+In machine learning, we usually deal with datasets which contains multiple labels in one or more than one columns. These labels can be in the form of words or numbers. Label Encoding refers to converting the labels into numeric form so as to convert it into the machine-readable form.
+
+![label-encoder](https://user-images.githubusercontent.com/69766918/231740202-29af1399-f5f8-4897-b3ef-bae5a91a9972.jpg)
+
+
 ## Model Training and Testing
 
 ![train-test-split](https://user-images.githubusercontent.com/69766918/231648580-8c55b72d-fe29-4d4b-ab66-830eaf365190.jpg)
@@ -177,5 +184,5 @@ A decision tree is a non-parametric supervised learning algorithm, which is util
 #### (Read: https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
 ![decision-tree](https://user-images.githubusercontent.com/69766918/231719050-80ea6ecf-fa2f-4177-8a7d-48e6e311213d.jpg)
 
-
+### I have done exploratory analysis of the dataset also. Python code files are available.
 
