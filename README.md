@@ -56,7 +56,13 @@ filterwarnings('ignore') is to ignore the warnings thrown by the modules (gives 
 
 #### STEP 3: Datatypes and statistical information
 
+To know only column names:
+![columns-names](https://user-images.githubusercontent.com/69766918/231712244-bb97f2a5-58b7-4f36-8025-b4e2aa09ccd2.jpg)
+
+To print column names with datatypes: 
+
 ![datatypes_usinginfo](https://user-images.githubusercontent.com/69766918/231433233-7e99fb00-230a-4ec8-9ec5-a14512e48a99.jpg)
+
 
 
 ![stats_usingdescrib](https://user-images.githubusercontent.com/69766918/231433843-65659706-0293-484f-9110-0601016a4b97.jpg)
@@ -119,9 +125,8 @@ Since this is a relatively simple data set there is not much cleaning that needs
 This data set is not missing(and having no NUll) values. While this makes modeling much easier, this is not usually the case.
 
 ## Model Training and Testing
-![train-test-split](https://user-images.githubusercontent.com/69766918/231647513-ae7771f2-41c7-483d-ac05-c9e85c13b8d3.jpg)
 
-
+![train-test-split](https://user-images.githubusercontent.com/69766918/231648580-8c55b72d-fe29-4d4b-ab66-830eaf365190.jpg)
 
    * X - contains input attributes
    * Y - contains the output attribute
@@ -146,13 +151,31 @@ This data set is not missing(and having no NUll) values. While this makes modeli
 
 ### 1. Logistic Regression
 
- Logistic Regression is used when the dependent variable(target in our case Y) is categorical.
+ Logistic Regression is  used when the dependent variable(target in our case Y) is categorical. Logistic regression is a useful analysis method for classification problems. 
  
  (Read in Detail: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
 
 ![logistic-regression](https://user-images.githubusercontent.com/69766918/231647848-0a113cd2-e9e8-4af1-9f6a-2aef93fc9912.jpg)
 
+* fit() - used for training the model with the data
+* model.score() - gives the accuracy for the test data
 
+#### (Note: Are you getting different results for your machine learning algorithm? https://machinelearningmastery.com/different-results-each-time-in-machine-learning/)
+
+### 2. k-nearest neighbors (KNN)
+
+The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.The KNN algorithm assumes that similar things exist in close proximity. In other words, similar things are near to each other.
+
+#### (Read: https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761)
+
+![k-nearsetneighbor](https://user-images.githubusercontent.com/69766918/231651975-ed4fd82d-a44c-4936-82c4-bc1c21673dc3.jpg)
+
+### 3. Decision Tree
+
+A decision tree is a non-parametric supervised learning algorithm, which is utilized for both classification and regression tasks.  It is one way to display an algorithm that only contains conditional control statements.
+
+#### (Read: https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
+![decision-tree](https://user-images.githubusercontent.com/69766918/231719050-80ea6ecf-fa2f-4177-8a7d-48e6e311213d.jpg)
 
 
 
