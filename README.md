@@ -104,9 +104,55 @@ Steps to Calculate Standard Deviation
     * We have 50 samples in each output class
     
 ## Preprocessing the Dataset
+
+Before exploratory data analysis, make sure it is clean.
+Since this is a relatively simple data set there is not much cleaning that needs to be done.
     
-#### STEP 5: Count of unique values    
+#### Check for Missing Values
+
+![findingmissingvalue](https://user-images.githubusercontent.com/69766918/231449109-528fcc65-ac16-447b-ab7d-fcd125af789b.jpg)
+
+* There are no NULL values present in the dataset. 
+
+* If any NULL values are present, we have to fill all the NULL values before proceeding to model training.
+
+This data set is not missing(and having no NUll) values. While this makes modeling much easier, this is not usually the case.
+
+## Model Training and Testing
+![train-test-split](https://user-images.githubusercontent.com/69766918/231647513-ae7771f2-41c7-483d-ac05-c9e85c13b8d3.jpg)
+
+
+
+   * X - contains input attributes
+   * Y - contains the output attribute
+   * train_test_split() - splits the data for training and testing (here we are splitting 70% data for training and 30% for testing)
     
+
+(For more details:https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
+    
+    
+## Import some models and train
+
+
+### Steps to apply Algorithm
+
+    1. Split the dataset into training and testing dataset. The testing dataset is generally smaller than training one as it will help in training the model better.
+   2.  Select any algorithm based on the problem (classification or regression) whatever you feel may be good. we are going to use Logistic Regression Algorithm.
+   3.  Then pass the training dataset to the algorithm to train it. We use the .fit() method
+   4.  Then pass the testing data to the trained algorithm to predict the outcome. We use the .predict() method.
+   5.  We then check the accuracy by passing the predicted outcome and the actual output to the model.
+   
+
+
+### 1. Logistic Regression
+
+ Logistic Regression is used when the dependent variable(target in our case Y) is categorical.
+ 
+ (Read in Detail: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
+
+![logistic-regression](https://user-images.githubusercontent.com/69766918/231647848-0a113cd2-e9e8-4af1-9f6a-2aef93fc9912.jpg)
+
+
 
 
 
